@@ -35,11 +35,14 @@ The pin definitions are set by global variables:
 * cabinetState - This input reads the magnetic reed relay latch
 * ledPin - This output controls which pin flashes the 'ready for implant' light. Remember to use a resistor so your LED doesn't try to draw too much current.
 
-## Install opencv, set up the Pi
+## Install opencv, printer drivers, set up the Pi
 
 You will need to install opencv (use apt-get on your raspbian distro), as well as python opencv libraries (use pip). You will also need to install the imutils (apt-get).
 
 You will also need to enable the camera using raspberry pi configuration tool (use raspi-config to do this, may require a reboot).
+
+In addition, you will need the ZJ-58 printer drivers (or suitable drivers for
+the thermal printer that you chose).  A good tutorial on setting up the printer is here: [http://scruss.com/blog/2015/07/12/thermal-printer-driver-for-cups-linux-and-raspberry-pi-zj-58/]
 
 ## Copy files to your pi
 
